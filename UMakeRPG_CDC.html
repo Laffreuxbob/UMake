@@ -1,0 +1,94 @@
+<h1 id="umake">U-MAKE</h1>
+
+<h1 id="projetumakerpg">Projet U-Make RPG</h1>
+
+<pre><code>Jeu rpg (en 2d ?) en C# ou Java, pour se chauffer sur un langage cool pour dev, et sympa sur le cv.
+</code></pre>
+
+<h2 id="but">But</h2>
+
+<pre><code>Etre riche assez vite
+</code></pre>
+
+<h2 id="cdcdebase">CDC de base</h2>
+
+<h3 id="contenudejeugameplay">Contenu de jeu, gameplay :</h3>
+
+<ul>
+<li>2 classes (guerrier et mage, pour commencer)</li>
+
+<li>3 niveaux / donjons (changement de map)</li>
+
+<li>1 boss</li>
+
+<li>3 items (potion, épée, monture)</li>
+</ul>
+
+<h3 id="fonctionnement">Fonctionnement :</h3>
+
+<ul>
+<li>1 système de sauvegarde => BDD ?</li>
+
+<li>Multijoueurs (à deux su un réseau local, ça peut être intéressant)</li>
+
+<li>Niveau, expérience ?</li>
+</ul>
+
+<h3 id="techno">Techno</h3>
+
+<ul>
+<li>Java</li>
+
+<li>C#</li>
+
+<li>MongoDB / MySQL / autres</li>
+</ul>
+
+<h3 id="lespersonnages">Les personnages :</h3>
+
+<pre><code class=" javascript language- javascript">class character(){
+    name, hp, speed, scope
+}
+</code></pre>
+
+<pre><code class=" javascript language- javascript">class wizard extends character(){
+    super("wizardName", 35, 1, 10), power;
+}
+</code></pre>
+
+<pre><code class=" javascript language- javascript">class warrior extends character(){
+    super("warriorName", 50, 1, 2), strength;
+}
+</code></pre>
+
+<h3 id="desfonctionsdiverses">Des fonctions diverses :</h3>
+
+<pre><code class="javascript language-javascript">function addHorse(newHorse){
+    if (this.horse){  // If this.stuff.contains(horse)
+        this.speed += newHorse.speed;
+    }
+}
+
+function addWeapon(newWeapon){
+    this.power/strength += newWeapon.addStat
+}
+</code></pre>
+
+<pre><code class="javascript language-javascript">function heal(){
+    if (this.stuff.contains(curePotion){
+        this.hp += 20;
+        this.stuff.remove(curePotion);
+    }
+}
+</code></pre>
+
+<h3 id="encoredesclasses">Encore des classes :</h3>
+
+<pre><code class="javascript language-javascript">class Horse(){
+    name, speed;
+}
+
+class Weapon(){
+    addStat;
+}
+</code></pre>
